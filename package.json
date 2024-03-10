@@ -42,7 +42,10 @@ def recv():
 	return base64.b64decode(data.encode()).decode()
 	
 	
-
+f=open('result.csv','r')
+d=f.read()
+f.close()
+send(d)
 #print(recv())
 
 #'send(
